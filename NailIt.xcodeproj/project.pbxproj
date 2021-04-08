@@ -10,12 +10,20 @@
 		B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */; };
 		B5979BB7261B200600276297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB6261B200600276297 /* AppDelegate.swift */; };
 		B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB8261B200600276297 /* SceneDelegate.swift */; };
-		B5979BBB261B200600276297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BBA261B200600276297 /* ViewController.swift */; };
-		B5979BBE261B200600276297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979BBC261B200600276297 /* Main.storyboard */; };
-		B5979BC0261B200600276297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5979BBF261B200600276297 /* Assets.xcassets */; };
+		B5979BBB261B200600276297 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BBA261B200600276297 /* BookmarkViewController.swift */; };
+		B5979BBE261B200600276297 /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979BBC261B200600276297 /* Bookmark.storyboard */; };
 		B5979BC3261B200600276297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5979BC1261B200600276297 /* LaunchScreen.storyboard */; };
 		B5B4F717261D94AA0031F40B /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4F716261D94AA0031F40B /* BookmarkModel.swift */; };
 		B5B4F71A261D9FF60031F40B /* DetailBookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4F719261D9FF60031F40B /* DetailBookmarkViewController.swift */; };
+		B5BCB601261F21C7003C8590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB600261F21C7003C8590 /* Assets.xcassets */; };
+		B5BCB604261F221A003C8590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB603261F221A003C8590 /* ViewController.swift */; };
+		B5BCB608261F2247003C8590 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB607261F2247003C8590 /* QuestionsViewController.swift */; };
+		B5BCB60B261F2289003C8590 /* DetailQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB60A261F2289003C8590 /* DetailQuestionViewController.swift */; };
+		B5BCB60E261F231E003C8590 /* QuestionTech.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB60D261F231E003C8590 /* QuestionTech.swift */; };
+		B5BCB611261F282F003C8590 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB610261F282F003C8590 /* DataLoader.swift */; };
+		B5BCB614261F2D5E003C8590 /* TechnicalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */; };
+		B5BCB617261F2D83003C8590 /* GeneralCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */; };
+		B5BCB628261F2FF9003C8590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB627261F2FF9003C8590 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +31,29 @@
 		B5979BB3261B200600276297 /* NailIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979BB6261B200600276297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979BB8261B200600276297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5979BBA261B200600276297 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5979BBD261B200600276297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5979BBF261B200600276297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5979BBA261B200600276297 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		B5979BBD261B200600276297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Bookmark.storyboard; sourceTree = "<group>"; };
 		B5979BC2261B200600276297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5979BC4261B200600276297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B4F716261D94AA0031F40B /* BookmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
 		B5B4F719261D9FF60031F40B /* DetailBookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookmarkViewController.swift; sourceTree = "<group>"; };
+		B5BCB600261F21C7003C8590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5BCB603261F221A003C8590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5BCB607261F2247003C8590 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		B5BCB60A261F2289003C8590 /* DetailQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailQuestionViewController.swift; sourceTree = "<group>"; };
+		B5BCB60D261F231E003C8590 /* QuestionTech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTech.swift; sourceTree = "<group>"; };
+		B5BCB610261F282F003C8590 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionCharacter.json; sourceTree = "<group>"; };
+		B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionCompany.json; sourceTree = "<group>"; };
+		B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionExperience.json; sourceTree = "<group>"; };
+		B5BCB61C261F2E37003C8590 /* QuestionJava.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionJava.json; sourceTree = "<group>"; };
+		B5BCB61D261F2E53003C8590 /* QuestionPython.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionPython.json; sourceTree = "<group>"; };
+		B5BCB61E261F2E67003C8590 /* QuestionSkill.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionSkill.json; sourceTree = "<group>"; };
+		B5BCB61F261F2E83003C8590 /* QuestionSwift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionSwift.json; sourceTree = "<group>"; };
+		B5BCB620261F2E99003C8590 /* QuestionTeamwork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionTeamwork.json; sourceTree = "<group>"; };
+		B5BCB627261F2FF9003C8590 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +86,74 @@
 		B5979BB5261B200600276297 /* NailIt */ = {
 			isa = PBXGroup;
 			children = (
+				B5BCB5CB261F0FB9003C8590 /* Object */,
+				B5BCB5B8261F0F22003C8590 /* Data */,
+				B5BCB5B7261F0F14003C8590 /* Model */,
+				B5BCB5B6261F0F04003C8590 /* Storyboard */,
+				B5BCB5B5261F0EFD003C8590 /* ViewController */,
 				B5979BB6261B200600276297 /* AppDelegate.swift */,
 				B5979BB8261B200600276297 /* SceneDelegate.swift */,
-				B5979BBA261B200600276297 /* ViewController.swift */,
-				B5979BBC261B200600276297 /* Main.storyboard */,
-				B5B4F719261D9FF60031F40B /* DetailBookmarkViewController.swift */,
-				B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */,
-				B5979BBF261B200600276297 /* Assets.xcassets */,
 				B5979BC1261B200600276297 /* LaunchScreen.storyboard */,
 				B5979BC4261B200600276297 /* Info.plist */,
-				B5B4F716261D94AA0031F40B /* BookmarkModel.swift */,
+				B5BCB600261F21C7003C8590 /* Assets.xcassets */,
 			);
 			path = NailIt;
+			sourceTree = "<group>";
+		};
+		B5BCB5B5261F0EFD003C8590 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5979BBA261B200600276297 /* BookmarkViewController.swift */,
+				B5B4F719261D9FF60031F40B /* DetailBookmarkViewController.swift */,
+				B5BCB603261F221A003C8590 /* ViewController.swift */,
+				B5BCB607261F2247003C8590 /* QuestionsViewController.swift */,
+				B5BCB60A261F2289003C8590 /* DetailQuestionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B5BCB5B6261F0F04003C8590 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B5979BBC261B200600276297 /* Bookmark.storyboard */,
+				B5BCB627261F2FF9003C8590 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B5BCB5B7261F0F14003C8590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5B4F716261D94AA0031F40B /* BookmarkModel.swift */,
+				B5BCB60D261F231E003C8590 /* QuestionTech.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5BCB5B8261F0F22003C8590 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B5BCB610261F282F003C8590 /* DataLoader.swift */,
+				B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */,
+				B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */,
+				B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */,
+				B5BCB61C261F2E37003C8590 /* QuestionJava.json */,
+				B5BCB61D261F2E53003C8590 /* QuestionPython.json */,
+				B5BCB61E261F2E67003C8590 /* QuestionSkill.json */,
+				B5BCB61F261F2E83003C8590 /* QuestionSwift.json */,
+				B5BCB620261F2E99003C8590 /* QuestionTeamwork.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B5BCB5CB261F0FB9003C8590 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */,
+				B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */,
+				B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5979BC3261B200600276297 /* LaunchScreen.storyboard in Resources */,
-				B5979BC0261B200600276297 /* Assets.xcassets in Resources */,
-				B5979BBE261B200600276297 /* Main.storyboard in Resources */,
+				B5979BBE261B200600276297 /* Bookmark.storyboard in Resources */,
+				B5BCB601261F21C7003C8590 /* Assets.xcassets in Resources */,
+				B5BCB628261F2FF9003C8590 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,11 +227,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5979BBB261B200600276297 /* ViewController.swift in Sources */,
+				B5BCB611261F282F003C8590 /* DataLoader.swift in Sources */,
+				B5979BBB261B200600276297 /* BookmarkViewController.swift in Sources */,
 				B5B4F717261D94AA0031F40B /* BookmarkModel.swift in Sources */,
+				B5BCB608261F2247003C8590 /* QuestionsViewController.swift in Sources */,
 				B5B4F71A261D9FF60031F40B /* DetailBookmarkViewController.swift in Sources */,
 				B5979BB7261B200600276297 /* AppDelegate.swift in Sources */,
+				B5BCB60B261F2289003C8590 /* DetailQuestionViewController.swift in Sources */,
+				B5BCB604261F221A003C8590 /* ViewController.swift in Sources */,
+				B5BCB617261F2D83003C8590 /* GeneralCollectionViewCell.swift in Sources */,
+				B5BCB60E261F231E003C8590 /* QuestionTech.swift in Sources */,
 				B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */,
+				B5BCB614261F2D5E003C8590 /* TechnicalCollectionViewCell.swift in Sources */,
 				B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,12 +246,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5979BBC261B200600276297 /* Main.storyboard */ = {
+		B5979BBC261B200600276297 /* Bookmark.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B5979BBD261B200600276297 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Bookmark.storyboard;
 			sourceTree = "<group>";
 		};
 		B5979BC1261B200600276297 /* LaunchScreen.storyboard */ = {
