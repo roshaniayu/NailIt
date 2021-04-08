@@ -24,6 +24,8 @@
 		B5BCB614261F2D5E003C8590 /* TechnicalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */; };
 		B5BCB617261F2D83003C8590 /* GeneralCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */; };
 		B5BCB628261F2FF9003C8590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB627261F2FF9003C8590 /* Main.storyboard */; };
+		B5BCB62E261F7764003C8590 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB62D261F7764003C8590 /* SimulationViewController.swift */; };
+		B5BCB635261F8024003C8590 /* AboutSimulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB634261F8024003C8590 /* AboutSimulationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		B5BCB61F261F2E83003C8590 /* QuestionSwift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionSwift.json; sourceTree = "<group>"; };
 		B5BCB620261F2E99003C8590 /* QuestionTeamwork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionTeamwork.json; sourceTree = "<group>"; };
 		B5BCB627261F2FF9003C8590 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B5BCB62D261F7764003C8590 /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		B5BCB634261F8024003C8590 /* AboutSimulationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSimulationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				B5BCB603261F221A003C8590 /* ViewController.swift */,
 				B5BCB607261F2247003C8590 /* QuestionsViewController.swift */,
 				B5BCB60A261F2289003C8590 /* DetailQuestionViewController.swift */,
+				B5BCB62D261F7764003C8590 /* SimulationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */,
 				B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */,
 				B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */,
+				B5BCB634261F8024003C8590 /* AboutSimulationTableViewCell.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -237,7 +243,9 @@
 				B5BCB604261F221A003C8590 /* ViewController.swift in Sources */,
 				B5BCB617261F2D83003C8590 /* GeneralCollectionViewCell.swift in Sources */,
 				B5BCB60E261F231E003C8590 /* QuestionTech.swift in Sources */,
+				B5BCB635261F8024003C8590 /* AboutSimulationTableViewCell.swift in Sources */,
 				B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */,
+				B5BCB62E261F7764003C8590 /* SimulationViewController.swift in Sources */,
 				B5BCB614261F2D5E003C8590 /* TechnicalCollectionViewCell.swift in Sources */,
 				B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */,
 			);
