@@ -80,7 +80,9 @@
                             <constraint firstItem="VWW-SC-d6E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xnJ-uq-gK1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Simulation History" id="drf-iz-xsl"/>
+                    <navigationItem key="navigationItem" title="Simulation History" id="drf-iz-xsl">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gRI-s6-0dX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="simulationListTableView" destination="VWW-SC-d6E" id="7vQ-8V-9Vd"/>
                     </connections>
@@ -139,6 +141,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPb-bw-JRa">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.89629209840000001" green="0.89629209840000001" blue="0.89629209840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
