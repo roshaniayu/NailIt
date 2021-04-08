@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCR-fc-UYh">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,23 +8,150 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Simulation History-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NailIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SimulationHistoryListViewController" customModule="NailIt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VWW-SC-d6E">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ucg-kI-0xv" customClass="CellTableViewCell" customModule="NailIt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ucg-kI-0xv" id="Usv-Ce-fyy">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul Simulasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqN-rd-3By">
+                                                    <rect key="frame" x="20" y="12" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EmV-Mv-0ua">
+                                                    <rect key="frame" x="350" y="22.000000000000114" width="20" height="20"/>
+                                                    <color key="tintColor" red="0.89629209840000001" green="0.89629209840000001" blue="0.89629209840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="s5g-hf-wic"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanggal Simulasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY6-TJ-yUi">
+                                                    <rect key="frame" x="20" y="37" width="108" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cqN-rd-3By" firstAttribute="top" secondItem="Usv-Ce-fyy" secondAttribute="topMargin" constant="1" id="6Hb-RD-KIr"/>
+                                                <constraint firstItem="ZY6-TJ-yUi" firstAttribute="bottom" secondItem="Usv-Ce-fyy" secondAttribute="bottomMargin" id="Btk-aZ-VPs"/>
+                                                <constraint firstItem="ZY6-TJ-yUi" firstAttribute="top" secondItem="cqN-rd-3By" secondAttribute="bottom" constant="4" id="Ngi-Fl-wUp"/>
+                                                <constraint firstItem="cqN-rd-3By" firstAttribute="leading" secondItem="Usv-Ce-fyy" secondAttribute="leadingMargin" id="R18-Zf-wog"/>
+                                                <constraint firstItem="ZY6-TJ-yUi" firstAttribute="leading" secondItem="Usv-Ce-fyy" secondAttribute="leadingMargin" id="Ren-qS-XZe"/>
+                                                <constraint firstItem="EmV-Mv-0ua" firstAttribute="top" secondItem="Usv-Ce-fyy" secondAttribute="topMargin" constant="9.0000000000001137" id="XXM-gh-t7n"/>
+                                                <constraint firstItem="EmV-Mv-0ua" firstAttribute="trailing" secondItem="Usv-Ce-fyy" secondAttribute="trailingMargin" id="YIU-pv-vJv"/>
+                                                <constraint firstItem="EmV-Mv-0ua" firstAttribute="centerY" secondItem="Usv-Ce-fyy" secondAttribute="centerY" id="dkw-0k-pI9"/>
+                                                <constraint firstItem="ZY6-TJ-yUi" firstAttribute="top" secondItem="cqN-rd-3By" secondAttribute="bottom" constant="4" id="tx6-Jh-znG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="judulSimulasi" destination="cqN-rd-3By" id="mnq-X8-pcy"/>
+                                            <outlet property="tanggalSimulasi" destination="ZY6-TJ-yUi" id="FE2-Sx-Dcu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qSv-ch-IwH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="C1R-Lq-2lN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VWW-SC-d6E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cmd-Rd-iDB"/>
+                            <constraint firstItem="VWW-SC-d6E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W4c-Hn-XPZ"/>
+                            <constraint firstItem="VWW-SC-d6E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gmr-wu-lrd"/>
+                            <constraint firstItem="VWW-SC-d6E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xnJ-uq-gK1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Simulation History" id="drf-iz-xsl"/>
+                    <connections>
+                        <outlet property="simulationListTableView" destination="VWW-SC-d6E" id="7vQ-8V-9Vd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="94"/>
+            <point key="canvasLocation" x="949.23076923076917" y="93.838862559241704"/>
+        </scene>
+        <!--Simulation Detail View Controller-->
+        <scene sceneID="z6T-3x-KRp">
+            <objects>
+                <viewController storyboardIdentifier="SimulationDetailViewController" id="zcb-2D-NRj" customClass="SimulationDetailViewController" customModule="NailIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgS-uH-AYM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VSO-es-S5S">
+                                <rect key="frame" x="37" y="145" width="316" height="597"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="597" id="Ktq-Ds-h7O"/>
+                                    <constraint firstAttribute="width" constant="316" id="WYZ-fp-DgB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul Simulasi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUb-y0-T9a">
+                                <rect key="frame" x="37" y="84" width="316" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T1v-jA-jYT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nUb-y0-T9a" firstAttribute="leading" secondItem="T1v-jA-jYT" secondAttribute="leading" constant="37" id="4dG-vw-3qq"/>
+                            <constraint firstItem="T1v-jA-jYT" firstAttribute="trailing" secondItem="nUb-y0-T9a" secondAttribute="trailing" constant="37" id="5OU-cC-Rxz"/>
+                            <constraint firstItem="T1v-jA-jYT" firstAttribute="trailing" secondItem="VSO-es-S5S" secondAttribute="trailing" constant="37" id="6b8-7v-aLe"/>
+                            <constraint firstItem="nUb-y0-T9a" firstAttribute="top" secondItem="T1v-jA-jYT" secondAttribute="top" constant="40" id="C25-L7-jEm"/>
+                            <constraint firstItem="VSO-es-S5S" firstAttribute="top" secondItem="nUb-y0-T9a" secondAttribute="bottom" constant="40" id="Fad-km-Wv1"/>
+                            <constraint firstItem="VSO-es-S5S" firstAttribute="leading" secondItem="T1v-jA-jYT" secondAttribute="leading" constant="37" id="k69-2k-Ws7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePrev" destination="VSO-es-S5S" id="Cd9-UV-F3d"/>
+                        <outlet property="labelJudul" destination="nUb-y0-T9a" id="RQ7-IF-ZEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apV-1C-rGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644.6153846153845" y="93.838862559241704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fvi-nv-jmA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fCR-fc-UYh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPb-bw-JRa">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IBC-Dx-QbZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2W-m6-s9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="93.838862559241704"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
