@@ -1,0 +1,16 @@
+[
+    {
+        "q_id" : 1,
+        "title" : "Pertanyaan Python ya",
+        "description" : "tanam tanam ubi",
+        "details" : "dirumah budi"
+    
+    },
+    
+    {
+        "q_id" : 2,
+        "title" : "whre are you going brow?",
+        "description" : "tanam tanam ubi",
+        "details" : "dirumah budi"
+    }
+]
