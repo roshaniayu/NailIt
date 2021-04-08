@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */; };
 		B5979BB7261B200600276297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB6261B200600276297 /* AppDelegate.swift */; };
 		B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB8261B200600276297 /* SceneDelegate.swift */; };
 		B5979BBB261B200600276297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BBA261B200600276297 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		B5979BB3261B200600276297 /* NailIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979BB6261B200600276297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979BB8261B200600276297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				B5979BBA261B200600276297 /* ViewController.swift */,
 				B5979BBC261B200600276297 /* Main.storyboard */,
 				B5B4F719261D9FF60031F40B /* DetailBookmarkViewController.swift */,
+				B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */,
 				B5979BBF261B200600276297 /* Assets.xcassets */,
 				B5979BC1261B200600276297 /* LaunchScreen.storyboard */,
 				B5979BC4261B200600276297 /* Info.plist */,
@@ -148,6 +151,7 @@
 				B5B4F71A261D9FF60031F40B /* DetailBookmarkViewController.swift in Sources */,
 				B5979BB7261B200600276297 /* AppDelegate.swift in Sources */,
 				B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */,
+				B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

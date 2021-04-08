@@ -56,6 +56,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailBookmarkViewController {
             destination.bookmarkedQuestion = bookmarks[selectedIndex]
+            destination.selectedIndex = selectedIndex
         }
     }
 }
