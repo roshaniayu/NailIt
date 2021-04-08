@@ -10,6 +10,7 @@
 		71831AB9261ED799002F7EAF /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71831AB8261ED799002F7EAF /* CellTableViewCell.swift */; };
 		71831ABC261ED854002F7EAF /* SimulationHistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71831ABB261ED854002F7EAF /* SimulationHistoryListViewController.swift */; };
 		71831ABF261EDB93002F7EAF /* SimulationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71831ABE261EDB92002F7EAF /* SimulationDetailViewController.swift */; };
+		71C2DAB9261F0C91000BBEC9 /* YourAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2DAB8261F0C91000BBEC9 /* YourAnswerViewController.swift */; };
 		B5979BB7261B200600276297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB6261B200600276297 /* AppDelegate.swift */; };
 		B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB8261B200600276297 /* SceneDelegate.swift */; };
 		B5979BBB261B200600276297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BBA261B200600276297 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		71831AB8261ED799002F7EAF /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		71831ABB261ED854002F7EAF /* SimulationHistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationHistoryListViewController.swift; sourceTree = "<group>"; };
 		71831ABE261EDB92002F7EAF /* SimulationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailViewController.swift; sourceTree = "<group>"; };
+		71C2DAB8261F0C91000BBEC9 /* YourAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAnswerViewController.swift; sourceTree = "<group>"; };
 		B5979BB3261B200600276297 /* NailIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979BB6261B200600276297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5979BB8261B200600276297 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				B5979BB8261B200600276297 /* SceneDelegate.swift */,
 				B5979BBA261B200600276297 /* ViewController.swift */,
 				B5979BBC261B200600276297 /* Main.storyboard */,
+				71C2DAB8261F0C91000BBEC9 /* YourAnswerViewController.swift */,
 				B5979BBF261B200600276297 /* Assets.xcassets */,
 				B5979BC1261B200600276297 /* LaunchScreen.storyboard */,
 				B5979BC4261B200600276297 /* Info.plist */,
@@ -151,6 +154,7 @@
 				71831ABC261ED854002F7EAF /* SimulationHistoryListViewController.swift in Sources */,
 				71831AB9261ED799002F7EAF /* CellTableViewCell.swift in Sources */,
 				B5979BB7261B200600276297 /* AppDelegate.swift in Sources */,
+				71C2DAB9261F0C91000BBEC9 /* YourAnswerViewController.swift in Sources */,
 				B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
