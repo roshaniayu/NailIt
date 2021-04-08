@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var TechnicalCollectionView: UICollectionView!
     @IBOutlet weak var GeneralCollectionView: UICollectionView!
@@ -28,13 +28,17 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     ]
     var GeneralName = ["Character","Company","Experience","Skill","Teamwork"]
     
-
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            GeneralCollectionView.isHidden = true
-           
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        GeneralCollectionView.isHidden = true
+        preventLargeTitleCollapsing()
+    }
     
+    private func preventLargeTitleCollapsing() {
+        let dummyView = UIView()
+        view.addSubview(dummyView)
+        view.sendSubviewToBack(dummyView)
+    }
     
     @IBAction func SegmentedControlValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -63,7 +67,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             cell.TechnicalLogo.image = TechnicalImage[indexPath.item]
             cell.judulTLbl.text = TechnicalName[indexPath.item]
             
-            cell.contentView.layer.cornerRadius = 40.0
+            cell.contentView.layer.cornerRadius = 36.0
             
             
             return cell
@@ -72,7 +76,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCollectionViewCell", for: indexPath) as! GeneralCollectionViewCell
         cell.GeneralLogo.image = GeneralImage[indexPath.item]
         cell.judulLbl.text = GeneralName[indexPath.item]
-        cell.contentView.layer.cornerRadius = 40.0
+        cell.contentView.layer.cornerRadius = 36.0
         return cell
     }
     
