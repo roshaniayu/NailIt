@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEA9A6FC2620248F00C2DCA3 /* QuestionCharacter.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */; };
+		AEA9A6FE2620249600C2DCA3 /* QuestionCompany.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */; };
+		AEA9A7012620249E00C2DCA3 /* QuestionExperience.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */; };
+		AEA9A703262024A300C2DCA3 /* QuestionJava.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61C261F2E37003C8590 /* QuestionJava.json */; };
+		AEA9A706262024AA00C2DCA3 /* QuestionPython.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61D261F2E53003C8590 /* QuestionPython.json */; };
+		AEA9A708262024AF00C2DCA3 /* QuestionSkill.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61E261F2E67003C8590 /* QuestionSkill.json */; };
+		AEA9A70A262024B500C2DCA3 /* QuestionSwift.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61F261F2E83003C8590 /* QuestionSwift.json */; };
+		AEA9A70C262024BB00C2DCA3 /* QuestionTeamwork.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB620261F2E99003C8590 /* QuestionTeamwork.json */; };
 		B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */; };
 		B5979BB7261B200600276297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB6261B200600276297 /* AppDelegate.swift */; };
 		B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5979BB8261B200600276297 /* SceneDelegate.swift */; };
@@ -47,14 +55,14 @@
 		B5BCB610261F282F003C8590 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalCollectionViewCell.swift; sourceTree = "<group>"; };
 		B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCollectionViewCell.swift; sourceTree = "<group>"; };
-		B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionCharacter.json; sourceTree = "<group>"; };
-		B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionCompany.json; sourceTree = "<group>"; };
-		B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionExperience.json; sourceTree = "<group>"; };
-		B5BCB61C261F2E37003C8590 /* QuestionJava.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionJava.json; sourceTree = "<group>"; };
-		B5BCB61D261F2E53003C8590 /* QuestionPython.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionPython.json; sourceTree = "<group>"; };
-		B5BCB61E261F2E67003C8590 /* QuestionSkill.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionSkill.json; sourceTree = "<group>"; };
-		B5BCB61F261F2E83003C8590 /* QuestionSwift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionSwift.json; sourceTree = "<group>"; };
-		B5BCB620261F2E99003C8590 /* QuestionTeamwork.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionTeamwork.json; sourceTree = "<group>"; };
+		B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionCharacter.json; sourceTree = "<group>"; };
+		B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionCompany.json; sourceTree = "<group>"; };
+		B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionExperience.json; sourceTree = "<group>"; };
+		B5BCB61C261F2E37003C8590 /* QuestionJava.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionJava.json; sourceTree = "<group>"; };
+		B5BCB61D261F2E53003C8590 /* QuestionPython.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionPython.json; sourceTree = "<group>"; };
+		B5BCB61E261F2E67003C8590 /* QuestionSkill.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionSkill.json; sourceTree = "<group>"; };
+		B5BCB61F261F2E83003C8590 /* QuestionSwift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionSwift.json; sourceTree = "<group>"; };
+		B5BCB620261F2E99003C8590 /* QuestionTeamwork.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionTeamwork.json; sourceTree = "<group>"; };
 		B5BCB627261F2FF9003C8590 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B5BCB62D261F7764003C8590 /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
 		B5BCB634261F8024003C8590 /* AboutSimulationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSimulationTableViewCell.swift; sourceTree = "<group>"; };
@@ -219,10 +227,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA9A6FC2620248F00C2DCA3 /* QuestionCharacter.json in Resources */,
+				AEA9A708262024AF00C2DCA3 /* QuestionSkill.json in Resources */,
+				AEA9A70A262024B500C2DCA3 /* QuestionSwift.json in Resources */,
+				AEA9A7012620249E00C2DCA3 /* QuestionExperience.json in Resources */,
+				AEA9A6FE2620249600C2DCA3 /* QuestionCompany.json in Resources */,
+				AEA9A703262024A300C2DCA3 /* QuestionJava.json in Resources */,
 				B5979BC3261B200600276297 /* LaunchScreen.storyboard in Resources */,
+				AEA9A70C262024BB00C2DCA3 /* QuestionTeamwork.json in Resources */,
 				B5979BBE261B200600276297 /* Bookmark.storyboard in Resources */,
 				B5BCB601261F21C7003C8590 /* Assets.xcassets in Resources */,
 				B5BCB628261F2FF9003C8590 /* Main.storyboard in Resources */,
+				AEA9A706262024AA00C2DCA3 /* QuestionPython.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
