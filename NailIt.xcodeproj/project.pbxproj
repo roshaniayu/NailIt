@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71367D00262050D100E44413 /* SimulationHistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71367CFF262050D100E44413 /* SimulationHistoryListViewController.swift */; };
+		71367D032620547800E44413 /* SimulationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71367D022620547800E44413 /* SimulationDetailViewController.swift */; };
+		71367D072620564600E44413 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71367D062620564600E44413 /* CellTableViewCell.swift */; };
 		AEA9A6FC2620248F00C2DCA3 /* QuestionCharacter.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */; };
 		AEA9A6FE2620249600C2DCA3 /* QuestionCompany.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */; };
 		AEA9A7012620249E00C2DCA3 /* QuestionExperience.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71367CFF262050D100E44413 /* SimulationHistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimulationHistoryListViewController.swift; path = NailIt/Storyboard/SimulationHistoryListViewController.swift; sourceTree = SOURCE_ROOT; };
+		71367D022620547800E44413 /* SimulationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailViewController.swift; sourceTree = "<group>"; };
+		71367D062620564600E44413 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellTableViewCell.swift; path = NailIt/Storyboard/CellTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		B5979BB3261B200600276297 /* NailIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5979BB6261B200600276297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,10 +168,13 @@
 		B5BCB5CB261F0FB9003C8590 /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				71367D062620564600E44413 /* CellTableViewCell.swift */,
+				71367CFF262050D100E44413 /* SimulationHistoryListViewController.swift */,
 				B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */,
 				B5BCB613261F2D5E003C8590 /* TechnicalCollectionViewCell.swift */,
 				B5BCB616261F2D83003C8590 /* GeneralCollectionViewCell.swift */,
 				B5BCB634261F8024003C8590 /* AboutSimulationTableViewCell.swift */,
+				71367D022620547800E44413 /* SimulationDetailViewController.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				B5BCB608261F2247003C8590 /* QuestionsViewController.swift in Sources */,
 				B5B4F71A261D9FF60031F40B /* DetailBookmarkViewController.swift in Sources */,
 				B5979BB7261B200600276297 /* AppDelegate.swift in Sources */,
+				71367D00262050D100E44413 /* SimulationHistoryListViewController.swift in Sources */,
 				B5BCB60B261F2289003C8590 /* DetailQuestionViewController.swift in Sources */,
 				B5BCB604261F221A003C8590 /* ViewController.swift in Sources */,
 				B5BCB617261F2D83003C8590 /* GeneralCollectionViewCell.swift in Sources */,
@@ -263,6 +273,8 @@
 				B5979BB9261B200600276297 /* SceneDelegate.swift in Sources */,
 				B5BCB62E261F7764003C8590 /* SimulationViewController.swift in Sources */,
 				B5BCB614261F2D5E003C8590 /* TechnicalCollectionViewCell.swift in Sources */,
+				71367D072620564600E44413 /* CellTableViewCell.swift in Sources */,
+				71367D032620547800E44413 /* SimulationDetailViewController.swift in Sources */,
 				B52E461F261EFA3A009736DB /* NotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
