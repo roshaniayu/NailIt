@@ -480,14 +480,7 @@
                         <viewLayoutGuide key="safeArea" id="OEn-bY-iuZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Simulation" id="fL2-YP-ATj">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="SPf-Pq-0me"/>
-                        <barButtonItem key="rightBarButtonItem" image="gobackward" catalog="system" id="uqI-Bx-XpM">
-                            <connections>
-                                <segue destination="9nW-wU-Xif" kind="show" id="lHK-mK-nPw"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Simulation" id="fL2-YP-ATj"/>
                     <connections>
                         <outlet property="simulationTableView" destination="bux-FC-WGc" id="CGz-vA-0I5"/>
                     </connections>
@@ -496,137 +489,6 @@
                 <exit id="EXb-cu-5B2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3015.3846153846152" y="1560.42654028436"/>
-        </scene>
-        <!--Simulation History List View Controller-->
-        <scene sceneID="f2I-so-xX1">
-            <objects>
-                <viewController id="9nW-wU-Xif" customClass="SimulationHistoryListViewController" customModule="NailIt" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LrO-zo-8I6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xms-ze-ke9">
-                                <rect key="frame" x="0.0" y="144" width="390" height="617"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="C98-9g-lPc" customClass="CellTableViewCell" customModule="NailIt" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C98-9g-lPc" id="qAB-oY-3ac">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul Simulasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwa-hr-aGj">
-                                                    <rect key="frame" x="20" y="11" width="115" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanggal simulasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPg-GF-dyG">
-                                                    <rect key="frame" x="20" y="35" width="107" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YVm-M2-Cbf">
-                                                    <rect key="frame" x="342" y="21" width="28" height="22"/>
-                                                    <color key="tintColor" red="0.89629209840000001" green="0.89629209840000001" blue="0.89629209840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="31.670000000000002" id="Wkz-q5-Ou0"/>
-                                                        <constraint firstAttribute="width" constant="28" id="ynx-Jz-Xa4"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="YVm-M2-Cbf" firstAttribute="trailing" secondItem="qAB-oY-3ac" secondAttribute="trailingMargin" id="6BM-ox-T1v"/>
-                                                <constraint firstItem="hPg-GF-dyG" firstAttribute="leading" secondItem="qAB-oY-3ac" secondAttribute="leadingMargin" id="GwI-WR-Efs"/>
-                                                <constraint firstItem="hPg-GF-dyG" firstAttribute="top" secondItem="nwa-hr-aGj" secondAttribute="bottom" constant="3" id="MrA-Wg-CgS"/>
-                                                <constraint firstItem="nwa-hr-aGj" firstAttribute="top" secondItem="qAB-oY-3ac" secondAttribute="topMargin" id="OKh-KK-xbJ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="YVm-M2-Cbf" secondAttribute="bottom" constant="9.3300000000000001" id="WJq-A1-qRV"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="nwa-hr-aGj" secondAttribute="bottom" constant="22" id="ZKO-mZ-jj0"/>
-                                                <constraint firstItem="nwa-hr-aGj" firstAttribute="leading" secondItem="qAB-oY-3ac" secondAttribute="leadingMargin" id="giB-P7-upD"/>
-                                                <constraint firstItem="YVm-M2-Cbf" firstAttribute="top" secondItem="qAB-oY-3ac" secondAttribute="topMargin" constant="8" id="wlS-Nj-sAF"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="judulSimulasi" destination="nwa-hr-aGj" id="UtI-sP-2Fg"/>
-                                            <outlet property="tanggalSimulasi" destination="hPg-GF-dyG" id="N6e-ob-oS6"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="9nW-wU-Xif" id="Xrb-4H-gyT"/>
-                                    <outlet property="delegate" destination="9nW-wU-Xif" id="sSg-nz-ToN"/>
-                                </connections>
-                            </tableView>
-                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-0R-uay">
-                                <rect key="frame" x="0.0" y="88" width="390" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="9nW-wU-Xif" id="Mfb-Fn-SNJ"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="F1K-N6-3E0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xms-ze-ke9" firstAttribute="bottom" secondItem="F1K-N6-3E0" secondAttribute="bottom" id="6bc-Ps-kIB"/>
-                            <constraint firstItem="UT0-0R-uay" firstAttribute="leading" secondItem="F1K-N6-3E0" secondAttribute="leading" id="A8y-g3-WQ5"/>
-                            <constraint firstItem="UT0-0R-uay" firstAttribute="trailing" secondItem="F1K-N6-3E0" secondAttribute="trailing" id="KDY-rP-dTs"/>
-                            <constraint firstItem="UT0-0R-uay" firstAttribute="top" secondItem="LrO-zo-8I6" secondAttribute="top" constant="88" id="Qas-Uv-gsG"/>
-                            <constraint firstItem="xms-ze-ke9" firstAttribute="leading" secondItem="F1K-N6-3E0" secondAttribute="leading" id="S9O-Kn-RDj"/>
-                            <constraint firstItem="xms-ze-ke9" firstAttribute="trailing" secondItem="F1K-N6-3E0" secondAttribute="trailing" id="fmY-iE-1KQ"/>
-                            <constraint firstItem="xms-ze-ke9" firstAttribute="top" secondItem="UT0-0R-uay" secondAttribute="bottom" id="mcp-JR-wVV"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="T3J-jm-mEv">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="SbF-6P-A5G"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="searchBarSimulation" destination="UT0-0R-uay" id="GVW-qf-QS0"/>
-                        <outlet property="simulationListTableView" destination="xms-ze-ke9" id="asK-lc-PB2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H4v-Xe-Lep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3860" y="1558.2938388625591"/>
-        </scene>
-        <!--Simulation Detail View Controller-->
-        <scene sceneID="snW-u7-s2e">
-            <objects>
-                <viewController storyboardIdentifier="SimulationDetailViewController" id="4up-fd-ebt" customClass="SimulationDetailViewController" customModule="NailIt" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BXK-y1-qHk">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Judul Simulasi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjW-OJ-Tcu">
-                                <rect key="frame" x="16" y="95" width="358" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5SS-Fy-R7p">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="dxd-WN-f9c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="5SS-Fy-R7p" firstAttribute="leading" secondItem="dxd-WN-f9c" secondAttribute="leading" id="90J-yY-U5a"/>
-                            <constraint firstItem="5SS-Fy-R7p" firstAttribute="trailing" secondItem="dxd-WN-f9c" secondAttribute="trailing" id="LCj-Fc-nUC"/>
-                            <constraint firstItem="5SS-Fy-R7p" firstAttribute="bottom" secondItem="dxd-WN-f9c" secondAttribute="bottom" id="QVy-bl-5eg"/>
-                            <constraint firstItem="5SS-Fy-R7p" firstAttribute="top" secondItem="dxd-WN-f9c" secondAttribute="top" id="ZFT-fd-Idr"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imagePrev" destination="5SS-Fy-R7p" id="dAz-cd-xhw"/>
-                        <outlet property="labelJudul" destination="GjW-OJ-Tcu" id="iEt-As-xnW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xxs-1k-Uve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4660" y="1549.7630331753553"/>
         </scene>
         <!--Simulations-->
         <scene sceneID="rhB-Dy-uNN">
@@ -671,9 +533,7 @@
     <resources>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
         <image name="bubble.left.and.bubble.right.fill" catalog="system" width="128" height="97"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
-        <image name="gobackward" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
