@@ -27,6 +27,13 @@ class DetailQuestionViewController: UIViewController {
     }
     
 
+    @IBAction func bookmarkButton(_ sender: UIBarButtonItem) {
+       
+       
+        
+        
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -36,5 +43,6 @@ class DetailQuestionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
 }

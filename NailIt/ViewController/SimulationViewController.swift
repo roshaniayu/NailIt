@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import AVKit
+import MobileCoreServices
 
-class SimulationViewController: UIViewController {
+class SimulationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var simulationTableView: UITableView!
+    
+    var videoAndImageReview = UIImagePickerController()
+    var videoURL : URL?
     
     var bookmarks: [BookmarkModel] = [BookmarkModel(id_question: 1, id_bookmark: 1, question: "What makes you unique?"), BookmarkModel(id_question: 2, id_bookmark: 2, question: "If you could change one thing about your personality, what would it be?", notes: "test"), BookmarkModel(id_question: 3, id_bookmark: 3, question: "What hobbies or sports are you involved with outside of work, and why do you enjoy them?")]
     
@@ -86,5 +91,61 @@ extension SimulationViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return UITableView.automaticDimension
+    }
+    
+    
+    @IBAction func recordAct(_ sender: UIButton) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            print("Camera Available")
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            imagePicker.mediaTypes = [kUTTypeMovie as String]
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            print("Camera UnAvailable")
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        dismiss(animated: true, completion: nil)
+        guard let mediaType = info[UIImagePickerController.InfoKey.mediaURL.rawValue] as? String,
+            mediaType == (kUTTypeMovie as String),
+            let url = info[UIImagePickerController.InfoKey.mediaURL.rawValue] as? URL,
+            UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
+            else {
+                return
+        }
+        // Handle a movie capture
+        UISaveVideoAtPathToSavedPhotosAlbum(
+            url.path,
+            self,
+            #selector(video(_:didFinishSavingWithError:contextInfo:)),
+            nil)
+    }
+    
+    @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
+        let title = (error == nil) ? "Success" : "Error"
+        let message = (error == nil) ? "Video was saved" : "Video failed to save"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // playing Video
+    
+    @IBAction func playAct(_ sender: UIButton) {
+        videoAndImageReview.sourceType = .savedPhotosAlbum
+        videoAndImageReview.delegate = self
+        videoAndImageReview.mediaTypes = ["public.movie"]
+        present(videoAndImageReview, animated: true, completion: nil)
+    }
+    
+    func videoAndImageReview(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        videoURL = info[UIImagePickerController.InfoKey.mediaURL.rawValue] as? URL
+        print("\(String(describing: videoURL))")
+        self.dismiss(animated: true, completion: nil)
     }
 }

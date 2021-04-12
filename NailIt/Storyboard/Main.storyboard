@@ -291,7 +291,18 @@
                             <constraint firstItem="xp1-0y-G7g" firstAttribute="leading" secondItem="C3A-vg-Icc" secondAttribute="leading" constant="30" id="tcC-OC-Od4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Question Detail" id="Llj-0T-XGn"/>
+                    <navigationItem key="navigationItem" title="Question Detail" id="Llj-0T-XGn">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="dbh-WM-kLq">
+                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CdZ-K7-IYv">
+                                <rect key="frame" x="302" y="11" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bookmark" catalog="system"/>
+                            </button>
+                            <connections>
+                                <action selector="bookmarkButton:" destination="Xx5-FZ-4FE" id="UW8-5G-omZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="desc" destination="pGW-7A-Y9h" id="KKU-6C-Uuc"/>
                         <outlet property="example" destination="xp1-0y-G7g" id="Xu0-Ux-O6P"/>
@@ -365,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzn-or-Dhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3016.9230769230767" y="817.53554502369661"/>
+            <point key="canvasLocation" x="5652" y="818"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="f1A-t0-OVX">
@@ -375,7 +386,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4a-TG-KBF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="818"/>
+            <point key="canvasLocation" x="6622" y="818"/>
         </scene>
         <!--Bookmarks-->
         <scene sceneID="LIt-wq-Vzv">
@@ -394,7 +405,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgp-rQ-UQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2107" y="818"/>
+            <point key="canvasLocation" x="4800" y="818"/>
         </scene>
         <!--Simulation-->
         <scene sceneID="D1W-br-mVt">
@@ -447,6 +458,7 @@
                                                         <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="recordAct:" destination="2id-Ws-uRt" eventType="touchUpInside" id="eQi-wE-yGw"/>
                                                         <action selector="startSimulationButton:" destination="EXb-cu-5B2" eventType="touchUpInside" id="ttQ-ge-BMq"/>
                                                     </connections>
                                                 </button>
@@ -480,7 +492,18 @@
                         <viewLayoutGuide key="safeArea" id="OEn-bY-iuZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Simulation" id="fL2-YP-ATj"/>
+                    <navigationItem key="navigationItem" title="Simulation" id="fL2-YP-ATj">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ojy-6K-mND">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WUQ-B5-dMb">
+                                <rect key="frame" x="288" y="7" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <connections>
+                                <action selector="playAct:" destination="2id-Ws-uRt" id="z2X-8Y-Ukq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="simulationTableView" destination="bux-FC-WGc" id="CGz-vA-0I5"/>
                     </connections>
@@ -507,7 +530,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjM-tl-zHm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2148" y="1561"/>
+            <point key="canvasLocation" x="2105" y="1560"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l3Z-Kz-K4W">
@@ -531,6 +554,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
         <image name="bubble.left.and.bubble.right.fill" catalog="system" width="128" height="97"/>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
