@@ -322,6 +322,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="zaU-qQ-MrI">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -458,8 +461,8 @@
                                                         <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="recordAct:" destination="2id-Ws-uRt" eventType="touchUpInside" id="eQi-wE-yGw"/>
                                                         <action selector="startSimulationButton:" destination="EXb-cu-5B2" eventType="touchUpInside" id="ttQ-ge-BMq"/>
+                                                        <segue destination="mHb-pS-p47" kind="show" id="AF3-UX-atE"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -497,7 +500,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WUQ-B5-dMb">
                                 <rect key="frame" x="288" y="7" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="History"/>
                             </button>
                             <connections>
                                 <action selector="playAct:" destination="2id-Ws-uRt" id="z2X-8Y-Ukq"/>
@@ -511,7 +514,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzR-Bb-yg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="EXb-cu-5B2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3015.3846153846152" y="1560.42654028436"/>
+            <point key="canvasLocation" x="3015" y="1560"/>
+        </scene>
+        <!--Start Simulation View Controller-->
+        <scene sceneID="D7g-rq-844">
+            <objects>
+                <viewController id="mHb-pS-p47" customClass="StartSimulationViewController" customModule="NailIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zGt-5X-4hL">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-VF-HHf">
+                                <rect key="frame" x="108" y="407" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1562262475" green="0.45519363880000002" blue="0.83926123379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAct:" destination="mHb-pS-p47" eventType="touchUpInside" id="yH5-fk-jOA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DY-7g-JeD">
+                                <rect key="frame" x="155" y="225" width="81" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qIX-Vj-0CW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NFd-d4-2Ow">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="uL9-96-Sx0">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="AOK-gd-a27">
+                                <rect key="frame" x="288" y="7" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <connections>
+                                <action selector="nextButton:" destination="mHb-pS-p47" id="53G-HT-b4w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionLbl" destination="8DY-7g-JeD" id="AYl-tH-hzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptr-70-tVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3921.5384615384614" y="1559.7156398104264"/>
         </scene>
         <!--Simulations-->
         <scene sceneID="rhB-Dy-uNN">
