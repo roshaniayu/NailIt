@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71367D00262050D100E44413 /* SimulationHistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71367CFF262050D100E44413 /* SimulationHistoryListViewController.swift */; };
 		71367D032620547800E44413 /* SimulationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71367D022620547800E44413 /* SimulationDetailViewController.swift */; };
 		71367D072620564600E44413 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71367D062620564600E44413 /* CellTableViewCell.swift */; };
 		AEA9A6FC2620248F00C2DCA3 /* QuestionCharacter.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */; };
@@ -264,7 +263,6 @@
 				B5BCB608261F2247003C8590 /* QuestionsViewController.swift in Sources */,
 				B5B4F71A261D9FF60031F40B /* DetailBookmarkViewController.swift in Sources */,
 				B5979BB7261B200600276297 /* AppDelegate.swift in Sources */,
-				71367D00262050D100E44413 /* SimulationHistoryListViewController.swift in Sources */,
 				B5BCB60B261F2289003C8590 /* DetailQuestionViewController.swift in Sources */,
 				B5BCB604261F221A003C8590 /* ViewController.swift in Sources */,
 				B5BCB617261F2D83003C8590 /* GeneralCollectionViewCell.swift in Sources */,
