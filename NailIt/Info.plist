@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>NailIt would like to access to your Media Library.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>NailIt would like to use your camera.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>NailIt would like to access your microphone.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>NailIt would like to save to your Photo Library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>NailIt would like to access to your Photo Library.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

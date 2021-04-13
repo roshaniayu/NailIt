@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE917D172625370400D61743 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D162625370400D61743 /* VideoHelper.swift */; };
+		AE917D1A2625733500D61743 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D192625733500D61743 /* VideosViewController.swift */; };
 		AEA9A6FC2620248F00C2DCA3 /* QuestionCharacter.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB619261F2DC6003C8590 /* QuestionCharacter.json */; };
 		AEA9A6FE2620249600C2DCA3 /* QuestionCompany.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61A261F2DF6003C8590 /* QuestionCompany.json */; };
 		AEA9A7012620249E00C2DCA3 /* QuestionExperience.json in Resources */ = {isa = PBXBuildFile; fileRef = B5BCB61B261F2E1C003C8590 /* QuestionExperience.json */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE917D162625370400D61743 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		AE917D192625733500D61743 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		AEBF04DD262421A50007DEF5 /* StartSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSimulationViewController.swift; sourceTree = "<group>"; };
 		B52E461E261EFA3A009736DB /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		B5979BB3261B200600276297 /* NailIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NailIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 		B5BCB5B5261F0EFD003C8590 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AE917D162625370400D61743 /* VideoHelper.swift */,
 				B5979BBA261B200600276297 /* BookmarkViewController.swift */,
 				B5B4F719261D9FF60031F40B /* DetailBookmarkViewController.swift */,
 				B5BCB603261F221A003C8590 /* ViewController.swift */,
@@ -124,6 +129,7 @@
 				B5BCB60A261F2289003C8590 /* DetailQuestionViewController.swift */,
 				B5BCB62D261F7764003C8590 /* SimulationViewController.swift */,
 				AEBF04DD262421A50007DEF5 /* StartSimulationViewController.swift */,
+				AE917D192625733500D61743 /* VideosViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -252,10 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE917D1A2625733500D61743 /* VideosViewController.swift in Sources */,
 				AEBF04DE262421A50007DEF5 /* StartSimulationViewController.swift in Sources */,
 				B5BCB611261F282F003C8590 /* DataLoader.swift in Sources */,
 				B5979BBB261B200600276297 /* BookmarkViewController.swift in Sources */,
 				B5B4F717261D94AA0031F40B /* BookmarkModel.swift in Sources */,
+				AE917D172625370400D61743 /* VideoHelper.swift in Sources */,
 				B5BCB608261F2247003C8590 /* QuestionsViewController.swift in Sources */,
 				B5B4F71A261D9FF60031F40B /* DetailBookmarkViewController.swift in Sources */,
 				B5979BB7261B200600276297 /* AppDelegate.swift in Sources */,
