@@ -12,6 +12,7 @@
 		AE917D2A2625888F00D61743 /* StartSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D292625888F00D61743 /* StartSimulationViewController.swift */; };
 		AE917D3126258DFE00D61743 /* AboutSimulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D3026258DFE00D61743 /* AboutSimulationTableViewCell.swift */; };
 		AE917D3426258E3100D61743 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE917D3326258E3100D61743 /* BookmarkModel.swift */; };
+		B5C4086B263B26D500D8F494 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5C4086A263B26D500D8F494 /* .gitignore */; };
 		B7107A352621AA53003D35A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7107A342621AA53003D35A2 /* AppDelegate.swift */; };
 		B7107A372621AA53003D35A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7107A362621AA53003D35A2 /* SceneDelegate.swift */; };
 		B7107A3C2621AA53003D35A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7107A3A2621AA53003D35A2 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		AE917D292625888F00D61743 /* StartSimulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartSimulationViewController.swift; sourceTree = "<group>"; };
 		AE917D3026258DFE00D61743 /* AboutSimulationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutSimulationTableViewCell.swift; sourceTree = "<group>"; };
 		AE917D3326258E3100D61743 /* BookmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
+		B5C4086A263B26D500D8F494 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = NailIt/.gitignore; sourceTree = SOURCE_ROOT; };
 		B7107A312621AA53003D35A2 /* Nailit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nailit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7107A342621AA53003D35A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7107A362621AA53003D35A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				B72BAB0D2624202900194EAB /* Model */,
 				B7107A402621AA54003D35A2 /* Assets.xcassets */,
 				B7107A452621AA54003D35A2 /* Info.plist */,
+				B5C4086A263B26D500D8F494 /* .gitignore */,
 			);
 			path = Nailit;
 			sourceTree = "<group>";
@@ -193,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B7107A2C2621AA53003D35A2 /* Build configuration list for PBXProject "Nailit" */;
+			buildConfigurationList = B7107A2C2621AA53003D35A2 /* Build configuration list for PBXProject "NailIt" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,6 +226,7 @@
 				B72BAB702627690F00194EAB /* ProtocolInSwift.mp4 in Resources */,
 				B7107A412621AA54003D35A2 /* Assets.xcassets in Resources */,
 				B72BAB192625466B00194EAB /* Question.storyboard in Resources */,
+				B5C4086B263B26D500D8F494 /* .gitignore in Resources */,
 				B7107A3C2621AA53003D35A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +454,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7107A2C2621AA53003D35A2 /* Build configuration list for PBXProject "Nailit" */ = {
+		B7107A2C2621AA53003D35A2 /* Build configuration list for PBXProject "NailIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7107A462621AA54003D35A2 /* Debug */,
